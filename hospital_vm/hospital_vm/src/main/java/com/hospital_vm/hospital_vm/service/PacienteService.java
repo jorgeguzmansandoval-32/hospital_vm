@@ -23,7 +23,7 @@ public class PacienteService {
 
 
     public Paciente findById (long id){
-        return pacienteRepository.findById(null).get();
+        return pacienteRepository.findById(id).get();
     }
 
     public Paciente save(Paciente paciente) {
